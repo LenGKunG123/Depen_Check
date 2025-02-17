@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+    <fontFamily name="TH Saraban New">
+        <normal><![CDATA[src/main/resources/fonts/THSarabunNew/THSarabunNew.ttf]]></normal>
+        <bold><![CDATA[src/main/resources/fonts/THSarabunNew/THSarabunNew Bold.ttf]]></bold>
+        <italic><![CDATA[src/main/resources/fonts/THSarabunNew/THSarabunNew Italic.ttf]]></italic>
+        <boldItalic><![CDATA[src/main/resources/fonts/THSarabunNew/THSarabunNew BoldItalic.ttf]]></boldItalic>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+    <fontFamily name="DejaVuSans">
+        <normal><![CDATA[src/main/resources/fonts/DejaVuSans/DejaVuSans.ttf]]></normal>
+        <bold><![CDATA[src/main/resources/fonts/DejaVuSans/DejaVuSans-Bold.ttf]]></bold>
+        <italic><![CDATA[src/main/resources/fonts/DejaVuSans/DejaVuSansCondensed-Oblique.ttf]]></italic>
+        <boldItalic><![CDATA[src/main/resources/fonts/DejaVuSans/DejaVuSans-BoldOblique.ttf]]></boldItalic>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+</fontFamilies>

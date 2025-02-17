@@ -1,0 +1,108 @@
+Here’s a sample script for your meeting, based on the agenda items and roles provided:
+
+---
+
+### Piot Game Company Meeting
+**Date:** [Insert Date]  
+**Time:** [Insert Time]  
+**Location:** [Insert Location/Online Link]  
+**Duration:** 10-15 minutes  
+
+---
+
+#### **Chairperson (Pannawat 043): Opening Remarks**
+"Good morning, everyone. Welcome to today's meeting. I'm glad to see all of you here. As the Chairperson, I'll guide us through the agenda. Our goal today is to discuss the progress of Piot Game, including some key areas like our growth strategy, game concept, timeline, and other important topics. Let’s make this efficient and productive.  
+
+Let’s begin with the first agenda item."
+
+---
+
+#### **Agenda 1: Growth Percentage of Competitors**  
+**Chairperson:**  
+"As you all know, understanding our competition is crucial. Our competitors in the PC game market are growing at a steady pace of about X% per year. To compete, we need to focus on innovation and effective marketing. Does anyone have thoughts or suggestions on this?"  
+
+*(Pause for feedback)*  
+
+"Thank you for your input. Let’s keep these points in mind as we proceed."
+
+---
+
+#### **Agenda 2: Game Concept Proposal**  
+**Participant (Nateetarn 031):**  
+"I’ve been brainstorming ideas for our new game. The concept is an open-world strategy game where players can create and control their own kingdoms. It will have multiplayer features and unique storylines to attract a wide audience.  
+
+What do you think about this idea? Do you have any suggestions for improvement?"  
+
+*(Pause for feedback)*  
+
+"Thank you! I'll consider all these points as I refine the concept."
+
+---
+
+#### **Agenda 3: Project Timeline**  
+**Time-Keeper (Taspol 024):**  
+"Our estimated timeline is as follows:  
+- **Design Phase:** 2 months  
+- **Development Phase:** 6 months  
+- **Testing Phase:** 2 months  
+
+If we stick to this schedule, we can launch within 10 months. Does this timeline look realistic to everyone?"  
+
+*(Pause for discussion)*  
+
+"Great. I’ll update the timeline if needed based on any changes."
+
+---
+
+#### **Agenda 4: Design and User Experience**  
+**Facilitator (Chanapon 015):**  
+"Design and user experience are key to standing out. We plan to have a modern, minimalist design with intuitive controls to enhance the player experience.  
+
+Are there specific features you think we should prioritize in the design?"  
+
+*(Pause for feedback)*  
+
+"Thank you. Your ideas are very helpful. I'll make sure they are included in the final plan."
+
+---
+
+#### **Agenda 5: Budget**  
+**Participant (Nateetarn 031):**  
+"Our estimated budget is $500,000. This covers design, development, marketing, and testing.  
+
+Do you think this is sufficient, or should we reallocate funds to certain areas?"  
+
+*(Pause for discussion)*  
+
+"Good points. I’ll review the budget again to see where adjustments can be made."
+
+---
+
+#### **Agenda 6: Marketing and Launch Strategy**  
+**Minute-Taker (Kittichai 003):**  
+"Our marketing plan includes using social media, gaming forums, and partnerships with influencers to promote the game.  
+
+Do you have any additional ideas for our marketing strategy?"  
+
+*(Pause for discussion)*  
+
+"Thank you. I’ll document all these ideas for the final strategy."
+
+---
+
+#### **Agenda 7: Discussion & Q&A**  
+**Chairperson:**  
+"We’re now at the Q&A session. Does anyone have questions or concerns about today’s discussion?"  
+
+*(Allow team members to ask questions and address them accordingly)*  
+
+"Thank you for your questions and suggestions. They will help us improve."
+
+---
+
+#### **Chairperson: Closing Remarks**  
+"That concludes our meeting for today. Thank you, everyone, for your input and dedication. Let’s stay focused on our goals and continue working hard. I’ll follow up with the next steps via email. Have a great day!"
+
+---
+
+This meeting script keeps the language simple and includes participation from all team members. Let me know if you’d like any adjustments!

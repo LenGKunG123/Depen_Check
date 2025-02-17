@@ -1,0 +1,912 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Tax_Certificate" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="be9e3396-2ea7-42e5-85c1-cb0fca12f462">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="attachNumber" class="java.lang.String"/>
+	<parameter name="serialNumber" class="java.lang.String"/>
+	<parameter name="senderName" class="java.lang.String"/>
+	<parameter name="senderAddress" class="java.lang.String"/>
+	<parameter name="holderName" class="java.lang.String"/>
+	<parameter name="holderAddress" class="java.lang.String"/>
+	<parameter name="nid" class="java.lang.String"/>
+	<parameter name="recipientName" class="java.lang.String"/>
+	<parameter name="recipientAddress" class="java.lang.String"/>
+	<parameter name="recipientTaxId13" class="java.lang.String"/>
+	<parameter name="pin" class="java.lang.String"/>
+	<parameter name="tin" class="java.lang.String"/>
+	<parameter name="sequenceNumber" class="java.lang.String"/>
+	<parameter name="taxType" class="java.lang.String"/>
+	<parameter name="incType1Date" class="java.lang.String"/>
+	<parameter name="incType1Paid" class="java.lang.String"/>
+	<parameter name="incType1Tax" class="java.lang.String"/>
+	<parameter name="incType2Date" class="java.lang.String"/>
+	<parameter name="incType2Paid" class="java.lang.String"/>
+	<parameter name="incType2Tax" class="java.lang.String"/>
+	<parameter name="incType3Date" class="java.lang.String"/>
+	<parameter name="incType3Paid" class="java.lang.String"/>
+	<parameter name="incType3Tax" class="java.lang.String"/>
+	<parameter name="incType4ADate" class="java.lang.String"/>
+	<parameter name="incType4APaid" class="java.lang.String"/>
+	<parameter name="incType4ATax" class="java.lang.String"/>
+	<parameter name="incType4B11Date" class="java.lang.String"/>
+	<parameter name="incType4B11Paid" class="java.lang.String"/>
+	<parameter name="incType4B11Tax" class="java.lang.String"/>
+	<parameter name="incType4B12Date" class="java.lang.String"/>
+	<parameter name="incType4B12Paid" class="java.lang.String"/>
+	<parameter name="incType4B12Tax" class="java.lang.String"/>
+	<parameter name="incType4B13Date" class="java.lang.String"/>
+	<parameter name="incType4B13Paid" class="java.lang.String"/>
+	<parameter name="incType4B13Tax" class="java.lang.String"/>
+	<parameter name="incType4B14Date" class="java.lang.String"/>
+	<parameter name="incType4B14Paid" class="java.lang.String"/>
+	<parameter name="incType4B14Tax" class="java.lang.String"/>
+	<parameter name="incType4B14Detail" class="java.lang.String"/>
+	<parameter name="incType4B21Date" class="java.lang.String"/>
+	<parameter name="incType4B21Paid" class="java.lang.String"/>
+	<parameter name="incType4B21Tax" class="java.lang.String"/>
+	<parameter name="incType4B22Date" class="java.lang.String"/>
+	<parameter name="incType4B22Paid" class="java.lang.String"/>
+	<parameter name="incType4B22Tax" class="java.lang.String"/>
+	<parameter name="incType4B23Date" class="java.lang.String"/>
+	<parameter name="incType4B23Paid" class="java.lang.String"/>
+	<parameter name="incType4B23Tax" class="java.lang.String"/>
+	<parameter name="incType4B24Date" class="java.lang.String"/>
+	<parameter name="incType4B24Paid" class="java.lang.String"/>
+	<parameter name="incType4B24Tax" class="java.lang.String"/>
+	<parameter name="incType4B25Date" class="java.lang.String"/>
+	<parameter name="incType4B25Paid" class="java.lang.String"/>
+	<parameter name="incType4B25Tax" class="java.lang.String"/>
+	<parameter name="incType4B25Detail" class="java.lang.String"/>
+	<parameter name="incType5Date" class="java.lang.String"/>
+	<parameter name="incType5Paid" class="java.lang.String"/>
+	<parameter name="incType5Tax" class="java.lang.String"/>
+	<parameter name="incType6Date" class="java.lang.String"/>
+	<parameter name="incType6Paid" class="java.lang.String"/>
+	<parameter name="incType6Tax" class="java.lang.String"/>
+	<parameter name="incType6Detail" class="java.lang.String"/>
+	<parameter name="paidAmt" class="java.lang.String"/>
+	<parameter name="taxAmt" class="java.lang.String"/>
+	<parameter name="taxAmtAlphabet" class="java.lang.String"/>
+	<parameter name="pensionFund" class="java.lang.String"/>
+	<parameter name="socialSecurityFund" class="java.lang.String"/>
+	<parameter name="lifeSupportFund" class="java.lang.String"/>
+	<parameter name="payCon" class="java.lang.String"/>
+	<parameter name="payConDetail" class="java.lang.String"/>
+	<parameter name="signature" class="java.io.InputStream"/>
+	<parameter name="compSeal" class="java.io.InputStream"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="month" class="java.lang.String"/>
+	<parameter name="year" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="27" splitType="Stretch">
+		<element kind="staticText" uuid="e15d7f41-1be1-4a16-bdba-aab0e1f28290" x="19" y="0" width="338" height="27" fontName="TH Saraban New" fontSize="10.0">
+			<paragraph lineSpacingSize="0.0"/>
+			<text><![CDATA[ฉบับที่ 1 (สำหรับผู้ถูกหักภาษี ณ ที่จ่าย ใช้แนบพร้อมกับแบบแสดงรายได้ภาษี)
+ฉบับที 2 (สำหรับผู้ถูกหักภาษี ณ ที่จ่าย เก็บไว้เป็นหลักฐาน)
+]]></text>
+		</element>
+	</title>
+	<pageHeader height="727" splitType="Stretch">
+		<element kind="rectangle" uuid="30a9f93a-ac9b-457e-9d55-8241038e8f5f" x="10" y="0" width="534" height="726">
+			<pen lineWidth="1.0"/>
+		</element>
+		<element kind="rectangle" uuid="e3e5a423-c7d2-4a77-879f-f01144ae021e" positionType="Float" x="18" y="31" width="519" height="67" radius="6"/>
+		<element kind="staticText" uuid="48922ebd-267a-4e54-b998-c02f48c9fa8d" x="143" y="0" width="277" height="26" fontName="TH Saraban New" fontSize="18.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[หนังสือรับรองการหักภาษี ณ ที่จ่าย]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="d0cb4193-13e0-4382-8bf0-bc8f27c7e3f3" x="143" y="17" width="269" height="20" fontName="TH Saraban New" fontSize="12.0" bold="false" hTextAlign="Center">
+			<paragraph lineSpacingSize="0.0"/>
+			<text><![CDATA[ตามมาตรา 50 ทวิ แห่งประมวลรัษฎากร]]></text>
+			<box>
+				<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="bb611610-69ad-4fb2-9b43-d90c94ea8cde" x="443" y="1" width="94" height="40" fontName="TH Saraban New" fontSize="12.0">
+			<paragraph lineSpacing="Single" lineSpacingSize="1.0"/>
+			<text><![CDATA[เล่มที่..................................
+เลขที่...................................]]></text>
+		</element>
+		<element kind="staticText" uuid="bf275164-8e0f-43fc-8740-c14a4c50db3b" x="30" y="33" width="190" height="71" fontName="TH Saraban New" fontSize="14.0" bold="true">
+			<paragraph lineSpacing="Proportional" lineSpacingSize="1.2"/>
+			<text><![CDATA[ผู้มีหน้าที่หักภาษี ณ ที่จ่าย : -
+ชื่อ
+ที่อยู่]]></text>
+		</element>
+		<element kind="textField" uuid="b103b634-997d-4b3e-a5a0-91300aa50383" x="43" y="48" width="242" height="21" fontName="TH Saraban New" fontSize="14.0" vTextAlign="Bottom">
+			<paragraph lineSpacing="Fixed" lineSpacingSize="0.0"/>
+			<expression><![CDATA[$P{holderName}]]></expression>
+			<box topPadding="1" leftPadding="2" bottomPadding="0">
+				<pen lineWidth="0.0" lineStyle="Dotted"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="textField" uuid="c1e0d62b-3cff-4784-97a3-aa4c3251f2c8" x="49" y="69" width="464" height="23" fontName="TH Saraban New" fontSize="14.0" vTextAlign="Bottom">
+			<paragraph lineSpacingSize="0.0"/>
+			<expression><![CDATA[$P{holderAddress}]]></expression>
+			<box topPadding="4" leftPadding="2">
+				<pen lineWidth="1.0" lineStyle="Dotted"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="c1e05787-0cb0-4ada-a1f6-d9b620a9f66e" x="65" y="65" width="235" height="16" fontName="TH Saraban New" fontSize="9.0" vTextAlign="Top">
+			<text><![CDATA[(ให้ระบุว่าเป็น บุคคล นิติบุคคล บริษัท สมาคม หรือ คณะบุคคล)]]></text>
+		</element>
+		<element kind="staticText" uuid="13d19079-0e27-4793-97f7-0f7b61df1ddb" x="283" y="53" width="134" height="28" fontName="TH Saraban New" fontSize="14.0" bold="true">
+			<text><![CDATA[เลขประจำตัวผู้เสียภาษีอากร]]></text>
+		</element>
+		<element kind="staticText" uuid="b5d407c8-2e19-4eb6-824d-f6ee7f8e5608" x="205" y="33" width="182" height="22" fontName="TH Saraban New" fontSize="14.0" bold="true">
+			<text><![CDATA[เลขประจำตัวผู้เสียภาษีอากร (13 หลัก)*]]></text>
+		</element>
+		<element kind="staticText" uuid="251cd8d4-71a9-416d-99c0-1e7731fa9ed1" x="66" y="88" width="254" height="16" fontName="TH Saraban New" fontSize="9.0">
+			<text><![CDATA[(ให้ระบุชื่ออาคาร/หมู่บ้าน ห้องเลขที่ ชั้นที่ เลขที่ ตรอก/ซอย หมู่ที่ ถนน ตำบล/แขวง อำเภอ/เขต จังหวัด)]]></text>
+		</element>
+		<element kind="rectangle" uuid="3decaa0b-6cc4-4e28-bef1-ac66096aa973" x="18" y="100" width="519" height="117" radius="6">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="dba3fd94-b64e-48e4-a437-36e30bcde23b" x="30" y="102" width="190" height="71" fontName="TH Saraban New" fontSize="14.0" bold="true">
+			<paragraph lineSpacing="Proportional" lineSpacingSize="1.3"/>
+			<text><![CDATA[ผู้ถูกที่หักภาษี ณ ที่จ่าย : -
+ชื่อ
+ที่อยู่]]></text>
+		</element>
+		<element kind="staticText" uuid="95e5befb-a789-4ad3-b207-c22dfe4da2e5" x="66" y="137" width="235" height="16" fontName="TH Saraban New" fontSize="9.0">
+			<text><![CDATA[(ให้ระบุว่าเป็น บุคคล นิติบุคคล บริษัท สมาคม หรือ คณะบุคคล)]]></text>
+		</element>
+		<element kind="textField" uuid="ffce5476-601b-4718-b45a-eb05986c6061" x="45" y="117" width="242" height="23" fontName="TH Saraban New" fontSize="14.0" vTextAlign="Bottom">
+			<paragraph lineSpacing="Fixed" lineSpacingSize="0.0"/>
+			<expression><![CDATA[$P{recipientName}]]></expression>
+			<box topPadding="1" leftPadding="2">
+				<pen lineWidth="0.0" lineStyle="Dotted"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="textField" uuid="6b261a68-69b2-48d6-b5df-9fa8fd049179" x="51" y="141" width="464" height="23" fontName="TH Saraban New" fontSize="14.0" vTextAlign="Bottom">
+			<paragraph lineSpacingSize="0.0"/>
+			<expression><![CDATA[$P{recipientAddress}]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<box topPadding="4" leftPadding="2">
+				<pen lineWidth="1.0" lineStyle="Dotted"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="92a152e6-6f79-4d38-ab1d-19c1b3fceee9" x="282" y="124" width="134" height="28" fontName="TH Saraban New" fontSize="14.0" bold="true">
+			<text><![CDATA[เลขประจำตัวผู้เสียภาษีอากร]]></text>
+		</element>
+		<element kind="staticText" uuid="4de1f11b-8bdc-4227-9e18-3d730c9caf76" x="205" y="102" width="182" height="22" fontName="TH Saraban New" fontSize="14.0" bold="true">
+			<text><![CDATA[เลขประจำตัวผู้เสียภาษีอากร (13 หลัก)*]]></text>
+		</element>
+		<element kind="staticText" uuid="d9e9f6d5-54aa-43eb-bbab-3e2f17af4ece" x="30" y="176" width="36" height="30" fontName="TH Saraban New" fontSize="14.0" bold="true">
+			<text><![CDATA[ลำดับที่]]></text>
+		</element>
+		<element kind="textField" uuid="489abfa7-01b2-41d2-ac11-eb87cf9c4137" x="68" y="176" width="70" height="16" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{sequenceNumber}]]></expression>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="3bc943a4-3e90-4890-9013-e683443ad696" x="66" y="160" width="254" height="16" fontName="TH Saraban New" fontSize="9.0">
+			<text><![CDATA[(ให้ระบุชื่ออาคาร/หมู่บ้าน ห้องเลขที่ ชั้นที่ เลขที่ ตรอก/ซอย หมู่ที่ ถนน ตำบล/แขวง อำเภอ/เขต จังหวัด)]]></text>
+		</element>
+		<element kind="staticText" uuid="fa9d36a8-397c-4d22-92bb-908dad064f9e" x="145" y="176" width="36" height="30" fontName="TH Saraban New" fontSize="14.0" bold="false">
+			<text><![CDATA[ในแบบ]]></text>
+		</element>
+		<element kind="staticText" uuid="f6854c12-ed30-4d3d-9c16-ea0913452024" x="32" y="193" width="140" height="30" rotation="None" fontName="TH Saraban New" fontSize="9.0" hTextAlign="Center" vTextAlign="Top">
+			<paragraph lineSpacing="Single" lineSpacingSize="0.0"/>
+			<text><![CDATA[(ให้สามารถอ้างอิงหรือสอบยันกันได้ระหว่างลำดับที่ตาม
+หนังสือรับรองฯ กับแบบยื่นรายการภาษีหักที่จ่าย]]></text>
+		</element>
+		<element kind="rectangle" uuid="def2a583-a79d-4fac-a85e-261c684d7b23" x="18" y="219" width="519" height="387" radius="6">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<pen lineWidth="1.0"/>
+		</element>
+		<element kind="rectangle" uuid="1ae88534-916c-406b-ba92-ec2628c33dc9" x="18" y="608" width="519" height="18" radius="6">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="bc4707a2-58d8-4cb8-834b-1b0d3c7c447d" x="18" y="628" width="519" height="19" radius="6">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="58f54318-dcab-4eef-9da3-310a249d4d4d" positionType="Float" stretchType="ContainerHeight" x="18" y="649" width="231" height="75" radius="6">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="line" uuid="4fb04455-79df-4a3d-a37d-f6453bbc5b33" stretchType="ContainerHeight" x="19" y="246" width="518" height="1"/>
+		<element kind="staticText" uuid="e0648178-2a01-42ae-a3d2-bf326ec67d1f" x="81" y="223" width="160" height="30" fontName="TH Saraban New" fontSize="14.0" bold="true">
+			<text><![CDATA[ประเภทเงินได้พึงประเมินจ่าย]]></text>
+		</element>
+		<element kind="line" uuid="becb609e-412a-4572-abe3-24e81f17c412" x="366" y="219" width="1" height="370"/>
+		<element kind="line" uuid="cf1bc659-b9ef-4ac9-ae05-08c8cc5f57a2" x="453" y="220" width="1" height="368"/>
+		<element kind="line" uuid="3f411632-1187-41bb-8015-cf75f9104c06" x="276" y="220" width="1" height="351"/>
+		<element kind="line" uuid="c90e0107-0de1-4195-b43f-07399cd89807" x="523" y="247" width="1" height="341">
+			<pen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+		</element>
+		<element kind="line" uuid="2f4a1a22-2c71-4035-92f7-28f1d575501a" x="439" y="247" width="1" height="341">
+			<pen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+		</element>
+		<element kind="staticText" uuid="59684d77-4aa5-473d-ad70-37779f799dd8" x="24" y="252" width="270" height="322" fontName="TH Saraban New" fontSize="10.0" bold="true">
+			<paragraph lineSpacingSize="0.0"/>
+			<text><![CDATA[1. เงินเดือน ค่าจ้าง เบี้ยเลี้ยง โบนัส ฯลฯ ตามมาตรา 40 (1)
+2. ค่าธรรมเนียม ค่านายหน้า ฯลฯ ตามมาตรา 40 (2)
+3. ค่าแห่งลิขสิทธิ์ ฯลฯ ตามมาตรา 40 (3)
+4. (ก) ดอกเบี้ย ฯลฯ ตามมาตรา 40 (4)(ก)
+    (ข) เงินปันผล เงินส่วนแบ่งกําไร ฯลฯ ตามมาตรา 40 (4)(ข)
+	(1) กรณีผู้ได้รับเงินปันผลได้รับเครดิตภาษี โดยจ่ายจาก
+	      กําไรสุทธิของกิจการที่ได้ต้องเสียภาษีเงินได้นิติบุคคลในอัตรา ดังนี้
+	     (1.1) อัตราร้อยละ 30 ของกําไรสุทธิ
+	     (1.2) อัตราร้อยละ 25 ของกําไรสุทธิ
+	     (1.3) อัตราร้อยละ 20 ของกําไรสุทธิ
+	     (1.4) อัตราอื่นๆ (ระบุ) ...........................ของกําไรสุทธิ
+	(2) กรณีผู้ได้รับเงินปันผลไม่ได้รับเครดิตภาษีเนื่องจากจ่ายจาก
+	     (2.1) กําไรสุทธิของกิจการที่ได้รับยกเว้นภาษีเงินได้นิติบุคคล
+	     (2.2) เงินปันผลหรือส่วนแบ่งของกําไรที่ได้รับยกเว้นไม่ต้องนํามารวม
+	            คํานวณเป็นรายได้เพื่อเสียภาษีเงินได้นิติบุคคล
+	     (2.3) กําไรสุทธิที่ได้หักผลขาดทุนสุทธิยกมาไม่เกิน 5 ปี
+	             ก่อนรอบระยะเวลาบัญชีปีปัจจุบัน
+	     (2.4) กําไรที่รับรู้ทางบัญชีโดยวิธีส่วนได้เสีย (equity method)
+	     (2.5) อื่นๆ (ระบุ) ..........................................................................
+5. การจ่ายเงินได้ที่ต้องหักภาษี ณ ที่จ่ายตามคําสั่งกรมสรรพากรที่ออกตาม
+มาตรา 3 เตรส เช่น รางวัล ส่วนลดหรือประโยชน์ใดๆ เนื่องจากการส่งเสริมการ
+ขาย รางวัลในการประกวด การแข่งขัน การชิงโชค ค่าแสดงของนักแสดงสาธารณะ
+ค่าจ้างทําของ ค่าโฆษณา ค่าเช่า ค่าขนส่ง ค่าบริการ ค่าเบี้ยประกันวินาศภัย ฯลฯ
+6. อื่นๆ (ระบุ) ...............................................................................................]]></text>
+		</element>
+		<element kind="staticText" uuid="2136454f-4d2d-4542-9f15-131475378eb0" x="276" y="219" width="79" height="20" fontName="TH Saraban New" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[วัน เดือน
+]]></text>
+		</element>
+		<element kind="staticText" uuid="f2027386-8cdf-4453-a359-c30da1b1d1ad" x="276" y="232" width="79" height="20" fontName="TH Saraban New" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[หรือปีภาษี ที่จ่าย]]></text>
+		</element>
+		<element kind="staticText" uuid="a3657423-79c3-4909-9ad2-fbda8f7ec2a4" x="369" y="224" width="79" height="20" fontName="TH Saraban New" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[จำนวนเงินที่จ่าย
+]]></text>
+		</element>
+		<element kind="staticText" uuid="a23b63e8-eabf-4445-b09f-2025ea1f9b47" x="457" y="232" width="79" height="20" fontName="TH Saraban New" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[และนำส่งไว้]]></text>
+		</element>
+		<element kind="staticText" uuid="21e44f1c-c645-49f5-b5e9-2125abd56471" x="457" y="220" width="79" height="20" fontName="TH Saraban New" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[ภาษีที่หัก]]></text>
+		</element>
+		<element kind="line" uuid="9249a85b-8035-471c-bd62-e1d8c63b2e2f" stretchType="ContainerHeight" x="18" y="569" width="519" height="1"/>
+		<element kind="line" uuid="d97ea341-336d-4018-9884-4ff172db2cc7" stretchType="ContainerHeight" x="367" y="588" width="170" height="1"/>
+		<element kind="staticText" uuid="e3526b1b-77fe-430e-9831-98213ce431be" x="229" y="571" width="140" height="26" fontName="TH Saraban New" fontSize="14.0" bold="true">
+			<text><![CDATA[รวมเงินที่นำจ่ายและภาษีที่หักนำส่ง]]></text>
+		</element>
+		<element kind="line" uuid="aafe1796-f60a-423d-b922-ebe0f4c66d71" stretchType="ContainerHeight" x="367" y="586" width="170" height="1">
+			<pen lineWidth="0.3"/>
+		</element>
+		<element kind="line" uuid="3ad0e057-bf10-4617-9731-e977d20f87fe" stretchType="ContainerHeight" x="277" y="263" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="bde28b96-443f-4cf6-8101-a0860859be4e" stretchType="ContainerHeight" x="277" y="275" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="c8b35e2a-e770-4f6e-b8bb-bde188765e8b" stretchType="ContainerHeight" x="277" y="289" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="3dbe06f0-7528-4666-b6d5-4072de5c41b5" stretchType="ContainerHeight" x="277" y="304" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="bc5d7db2-39e0-45d0-aa72-b1add37dc173" stretchType="ContainerHeight" x="277" y="355" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="96dca8c5-ce91-4248-9185-1646a4b6e005" stretchType="ContainerHeight" x="277" y="369" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="db741ed0-2b5f-4874-b6b5-7bf5c50d0e1f" stretchType="ContainerHeight" x="277" y="382" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="2b0819a7-2e42-4812-a19d-69de35eedb95" stretchType="ContainerHeight" x="277" y="395" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="837ff609-210c-4448-bebe-a65a4cb47ea6" stretchType="ContainerHeight" x="277" y="422" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="ee144389-5557-455a-8864-6443243664f8" stretchType="ContainerHeight" x="277" y="449" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="ede89ec6-f0aa-49a9-85e8-abc1ab6f68f3" stretchType="ContainerHeight" x="277" y="476" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="04fab83f-0b5e-4764-a4b0-a20ccf086b2d" stretchType="ContainerHeight" x="277" y="500" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="2f862943-f003-4138-a657-53c46e9d26bf" stretchType="ContainerHeight" x="277" y="554" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="line" uuid="4a8c7386-8c61-448d-94e8-aa42d0dc3b28" stretchType="ContainerHeight" x="277" y="566" width="260" height="1">
+			<pen lineWidth="0.3" lineStyle="Dotted"/>
+		</element>
+		<element kind="staticText" uuid="338d9fa3-3ba4-49df-818e-b00a7ee61e7f" x="28" y="590" width="132" height="19" fontName="TH Saraban New" fontSize="14.0" bold="false">
+			<text><![CDATA[รวมเงินภาษีที่หักนำส่ง (ตัวอักษร) ]]></text>
+		</element>
+		<element kind="staticText" uuid="015a8950-e309-4955-a18f-44f929fe38fc" x="28" y="609" width="48" height="19" fontName="TH Saraban New" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[เงินที่จ่ายเข้า]]></text>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+		</element>
+		<element kind="staticText" uuid="224fc6b0-6f2f-4d59-8048-24e2d827152f" x="73" y="609" width="464" height="19" fontName="TH Saraban New" fontSize="12.0" bold="false" vTextAlign="Middle">
+			<text><![CDATA[กบข./กสจ./กองทุนสงเคราะห์ครูโรงเรียนเอกชน......................บาท  กองทุนประกันสังคม.....................บาท  กองทุนสำรองเลี้ยงชีพ.......................บาท]]></text>
+		</element>
+		<element kind="staticText" uuid="3fad20dc-c9bf-43a9-902b-ec41e1bd9672" x="28" y="629" width="48" height="19" fontName="TH Saraban New" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[ผู้จ่ายเงิน]]></text>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+		</element>
+		<element kind="staticText" uuid="4e18e307-1327-4311-a8d0-84d30cb77850" x="29" y="650" width="34" height="20" fontName="TH Saraban New" fontSize="12.0" bold="true">
+			<text><![CDATA[คำเตือน]]></text>
+		</element>
+		<element kind="staticText" uuid="f7123c5c-637f-48d6-b3f2-fddabdaa1599" x="65" y="650" width="184" height="74" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[ผู้มีหน้าที่ออกหนังสือรับรองการหักภาษี ณ ที่จ่าย ฝ่าฝืนไม่ปฏิบัติตามมาตรา 50 ทวิแห่งประมวลรัษฎากร ต้องรับโทษทางอาญาตามมาตร 35 แห่งประมวลรัษฎากร]]></text>
+		</element>
+		<element kind="rectangle" uuid="86026208-b58a-40ae-9148-a40b879fb2b1" positionType="Float" stretchType="ContainerHeight" x="251" y="649" width="285" height="75" radius="6">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+		</element>
+		<element kind="staticText" uuid="c0504c32-7fb2-4312-b67d-e213b2f0ce7d" x="260" y="651" width="284" height="19" fontName="TH Saraban New" fontSize="12.0" bold="false" vTextAlign="Middle">
+			<text><![CDATA[ขอรับรองว่าข้อความและตัวเลขดังกล่าวข้างต้นถูกต้องตรงกับความจริงทุกประการ]]></text>
+		</element>
+		<element kind="staticText" uuid="67402a7e-6e19-4b97-be7c-c266648a260f" x="255" y="681" width="178" height="40" fontName="TH Saraban New" fontSize="12.0" bold="false" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[ลงชื่อ ................................................... ผู้จ่ายเงิน
+.............../.............../...............
+]]></text>
+		</element>
+		<element kind="staticText" uuid="595f7826-1c26-41c7-8367-06e9ea056a13" x="255" y="710" width="178" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<text><![CDATA[(วัน เดือน ปี ที่ออกหนังสือรับรองฯ)]]></text>
+		</element>
+		<element kind="staticText" uuid="066c65fc-2e2b-4b6d-9310-66e44f14e098" x="93" y="630" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(1) หัก ณ ที่จ่าย]]></text>
+		</element>
+		<element kind="staticText" uuid="2d399036-d98f-4c74-8ae7-c6e96cfa5bb2" x="179" y="631" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(2) ออกให้ตลอดไป]]></text>
+		</element>
+		<element kind="staticText" uuid="7d6b8ec6-2720-45cb-9d79-c85b9563a9e4" x="274" y="631" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(3) ออกให้ครั้งเดียว]]></text>
+		</element>
+		<element kind="staticText" uuid="715ca16c-6cae-47c5-bff0-4cc9e7314fe0" x="367" y="631" width="49" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(4) อื่นๆ (ระบุ)]]></text>
+		</element>
+		<element kind="staticText" uuid="8ea7dc82-9315-47ca-a6d5-c8c4e3bec49c" x="415" y="633" width="122" height="16" fontName="TH Saraban New" fontSize="12.0">
+			<text><![CDATA[...........................................................]]></text>
+		</element>
+		<element kind="staticText" uuid="00b20b63-f89f-4a91-95ae-db3ecd9552f5" x="208" y="178" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(1) ภ.ง.ด.1ก]]></text>
+		</element>
+		<element kind="staticText" uuid="7ab5c2ec-59b1-4eea-a48c-a9d03d9f961a" x="208" y="197" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(5) ภ.ง.ด.2ก]]></text>
+		</element>
+		<element kind="staticText" uuid="dd7a3680-08fd-4c72-9d82-4ed075362a78" x="291" y="178" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(2) ภ.ง.ด.1ก พิเศษ]]></text>
+		</element>
+		<element kind="staticText" uuid="e997399c-dbee-40d7-8771-932b66711056" x="381" y="178" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(3) ภ.ง.ด.2]]></text>
+		</element>
+		<element kind="staticText" uuid="69e488c8-7051-4830-8413-d32d77830281" x="463" y="178" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(4) ภ.ง.ด.3]]></text>
+		</element>
+		<element kind="staticText" uuid="4d223f06-6b18-4941-9b09-e1d57b0b9b7b" x="291" y="197" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(6) ภ.ง.ด.3ก]]></text>
+		</element>
+		<element kind="staticText" uuid="7765dbb8-fd13-4958-bd08-6ab3554c4884" x="381" y="197" width="67" height="16" fontName="TH Saraban New" fontSize="12.0" bold="false">
+			<text><![CDATA[(7) ภ.ง.ด.53]]></text>
+		</element>
+		<element kind="line" uuid="e7fa9b3f-9d39-4daa-bf3b-51f7a078417c" stretchType="ContainerHeight" x="362" y="41" width="171" height="1">
+			<pen lineWidth="0.3"/>
+		</element>
+		<element kind="rectangle" uuid="55619d65-8750-4006-be2d-d8f9474be622" x="380" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="6a46d6c5-bd15-417e-8643-31f418292027" x="464" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="9ee65a5f-66bb-44e2-8740-8b8ddf0514de" x="391" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="48834abf-4e58-4c01-aaf7-ac50661903c4" x="475" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="3e80aa7e-8dd3-4480-933f-05d883c92969" x="493" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="b14e828e-1608-4554-9dd5-16541639bd0e" x="504" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="c886f53c-8f32-44f3-96c2-9edbb1d2299d" x="522" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="8aab0b29-6632-491c-9067-1d33137872fa" x="362" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="e874ed14-6411-45f0-8473-228d6b1c85a3" x="431" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="bb7e1510-4e04-4116-908b-cf1cd365b463" x="413" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="e76b5c80-9248-466e-8953-358dd0fcc490" x="453" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="153fc55a-6ed2-42f2-8392-a36b8d3cb0e1" x="442" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="c5063b80-b83d-4fd4-bbe6-d993e0d16a43" x="402" y="34" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="line" uuid="67d366ec-c7fe-4e09-93b7-46f284a4d550" positionType="FixRelativeToBottom" stretchType="ContainerHeight" x="402" y="60" width="131" height="1">
+			<pen lineWidth="0.3"/>
+		</element>
+		<element kind="rectangle" uuid="48a2743b-633a-42d5-94f3-dfbd5eed033f" x="420" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="95b4f5c9-38f3-4dbb-b9d4-896c171ea6f6" x="471" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="d06e69ca-4a0d-4741-bc0e-2889c6484bdf" x="442" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="2f968f71-9e0e-42b9-b21f-b762ecd5a549" x="431" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="e70badb0-df6d-42a9-b781-731ab8f5a01f" x="522" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="2bef623a-b24e-48f9-b576-43bb5f076680" x="504" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="ff567937-2e69-4e59-9059-74b0aaf23e96" x="493" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="1e4c57ea-fca6-4048-92f7-ac3d8ad682a8" x="402" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="ace8ced8-ce91-44df-a0c5-ccbe2302ccc2" x="453" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="fa7f2600-9019-4751-b379-64ad5c3b74d0" x="482" y="53" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="line" uuid="5a5c06ce-759e-41f0-a088-f31d62afde6f" positionType="FixRelativeToBottom" stretchType="ContainerHeight" x="402" y="131" width="131" height="1">
+			<pen lineWidth="0.3"/>
+		</element>
+		<element kind="rectangle" uuid="a018b980-5aee-46e4-a9bb-c1d895bc9144" x="431" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="ce27af7c-ca9f-4424-892a-182433f8e1e7" x="493" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="d1f5b607-ad1c-4667-941c-27704b94e808" x="420" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="73ecccbc-adbc-4b48-9ef6-88ee4a9b04b2" x="504" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="acd6585e-a90d-4db0-834f-8d59a6f34f1c" x="522" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="b27ebacb-e8db-464f-b738-6f0ccedb0f11" x="442" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="95620b2c-ac40-42bf-9551-8af81d96f2e8" x="402" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="line" uuid="9e4cc4f1-bd69-4978-9b9e-5cba907177f0" stretchType="ContainerHeight" x="362" y="110" width="171" height="1">
+			<pen lineWidth="0.3"/>
+		</element>
+		<element kind="rectangle" uuid="79ecd55d-1e34-4681-a588-6d8aaa3cd754" x="471" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="fd5f3434-c051-4024-9247-bc82b053e7a0" x="482" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="731d09fa-36b2-4ab0-8f5a-5a78ab276cc3" x="522" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="98c42847-7141-46dc-8326-dad4b9d9c9f3" x="413" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="7e529918-9822-408a-824f-1fd388c762cf" x="391" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="251b7ba0-d467-4541-a651-74183372c438" x="402" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="4b466ab5-7526-4046-937b-296c43e95888" x="362" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="87f125c9-7384-470e-b14f-c6abeff9f973" x="442" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="6b86604b-2da4-4117-ac17-81641128d2c5" x="431" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="f9de0448-03d7-43ed-a6e6-56c238e67261" x="380" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="db0e728f-8dbf-43fb-b139-743119e2a78f" x="493" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="a9674cbf-93d1-4563-b016-3a7039128071" x="475" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="3fddaf94-75cb-4141-83d8-420a2024ac3d" x="504" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="6f192509-e737-402c-84d3-e06feb526ef3" x="464" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="889bba6d-9f34-40e6-818d-4356bdbb99c9" x="453" y="103" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="rectangle" uuid="6fc6bb50-1c55-4748-9d97-c2e5bf029166" x="453" y="124" width="11" height="14">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="a0aafc34-9aff-4508-b5d9-ccd993ac8bc0" x="364" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 0 )]]></expression>
+		</element>
+		<element kind="textField" uuid="3494ac17-bfb0-40f2-9c2b-c051192881a0" x="383" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 1 )]]></expression>
+		</element>
+		<element kind="textField" uuid="42a35da9-cc7f-43df-b211-00d31994ecff" x="394" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 2 )]]></expression>
+		</element>
+		<element kind="textField" uuid="2778fe77-ed39-48ce-8648-0738d1acac89" x="405" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 3 )]]></expression>
+		</element>
+		<element kind="textField" uuid="e7f0a312-ef91-47a1-a9a5-911d37434446" x="416" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 4 )]]></expression>
+		</element>
+		<element kind="textField" uuid="82b8ca4b-9dab-4c05-a2c7-06dc33fe21fc" x="434" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 5 )]]></expression>
+		</element>
+		<element kind="textField" uuid="42234ddf-bc5f-498c-8c0a-8dfb10b98ded" x="445" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 6 )]]></expression>
+		</element>
+		<element kind="textField" uuid="f755fcfb-0885-46da-893e-f78fdbe3049d" x="456" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 7 )]]></expression>
+		</element>
+		<element kind="textField" uuid="09ceec0a-8181-4a39-9f85-253fd9f5ecf5" x="467" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 8 )]]></expression>
+		</element>
+		<element kind="textField" uuid="f58bac4d-a724-4b03-b001-15bc871acbd1" x="478" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 9 )]]></expression>
+		</element>
+		<element kind="textField" uuid="75367b1e-ffac-4279-bed3-0452c1a8b6cf" x="495" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 10 )]]></expression>
+		</element>
+		<element kind="textField" uuid="8f0b9faf-836c-472b-b754-eebc9f4c5229" x="507" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 11 )]]></expression>
+		</element>
+		<element kind="textField" uuid="aa51244b-2673-4204-8ed3-516f144a4cfe" x="525" y="35" width="11" height="18">
+			<expression><![CDATA[$P{nid}.charAt( 12 )]]></expression>
+		</element>
+		<element kind="staticText" uuid="05e80235-5df7-4b75-854c-23cb2b06b9af" x="41" y="59" width="242" height="12" fontName="TH Saraban New" fontSize="9.0">
+			<text><![CDATA[..........................................................................................................................................................................]]></text>
+		</element>
+		<element kind="staticText" uuid="a7cb6d37-f3d8-4f9f-9f7d-eab83d2fda0e" x="46" y="81" width="487" height="12" fontName="TH Saraban New" fontSize="9.0">
+			<text><![CDATA[....................................................................................................................................................................................................................................................................................................................................................]]></text>
+		</element>
+		<element kind="staticText" uuid="517b87ae-59a4-4105-9f90-4fa379fde5ea" x="47" y="152" width="487" height="12" fontName="TH Saraban New" fontSize="9.0">
+			<text><![CDATA[....................................................................................................................................................................................................................................................................................................................................................]]></text>
+		</element>
+		<element kind="staticText" uuid="f99bec6b-2d1b-42c1-87a1-e1b5aacfccb0" x="41" y="129" width="242" height="12" fontName="TH Saraban New" fontSize="9.0">
+			<text><![CDATA[..........................................................................................................................................................................]]></text>
+		</element>
+		<element kind="textField" uuid="828d6431-4e91-4364-a83f-7810a95b951e" x="192" y="175" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{taxType}.equals("PND1A") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="cb110179-26e0-44bc-ab84-28505be564e8" x="192" y="194" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{taxType}.equals("PND2A") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="2e05c07d-3e73-4639-9dcb-2d2046a0f231" x="275" y="175" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{taxType}.equals("PND1AS") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="7f851a1c-8662-4552-995e-70274cc41c46" x="447" y="175" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{taxType}.equals("PND3") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="649d33fb-8241-4ba5-89b4-e84034b0d1f9" x="275" y="194" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{taxType}.equals("PND3A") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="be434639-821d-42fd-8347-2d673d561560" x="365" y="194" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{taxType}.equals("PND53") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="90417807-55d8-411d-8b06-1d73da2b43e9" x="365" y="175" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{taxType}.equals("PND2") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="8fa2d849-cc84-4c3b-bffe-b683000c6f01" x="463" y="0" width="81" height="21" fontName="TH Saraban New" fontSize="12.0">
+			<expression><![CDATA[$P{attachNumber}]]></expression>
+		</element>
+		<element kind="textField" uuid="7ff9230d-2073-49e9-9fe3-fc359f849e3c" x="463" y="15" width="78" height="21" fontName="TH Saraban New" fontSize="12.0">
+			<expression><![CDATA[$P{serialNumber}]]></expression>
+		</element>
+		<element kind="image" uuid="1355b076-f08c-4037-88a8-d2dce154d516" x="300" y="660" width="100" height="38">
+			<expression><![CDATA[$P{signature}]]></expression>
+		</element>
+		<element kind="image" uuid="1355b076-f08c-4037-88a8-d2dce154d517" x="434" y="668" width="111" height="53" onErrorType="Blank">
+			<expression><![CDATA[$P{compSeal}]]></expression>
+		</element>
+		<element kind="textField" uuid="e047bd21-1dff-454f-82d7-f7caf8eec6d3" x="364" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(0) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="29e098ef-58db-46c8-808f-c11fd5b63e04" x="382" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(1) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="39e1cd4c-25cf-4d51-a263-cc238e103272" x="393" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(2) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="91aa06a2-d745-40c7-a3b5-725f8533fe49" x="404" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(3) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="ac057122-7d01-4e8d-aae7-515428177e11" x="415" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(4) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="ffda4ffc-2da8-4ed7-bb27-ad2b2a754d99" x="433" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(5) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="09cb083f-f6e3-41c7-96a3-32cb8c2ca388" x="444" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(6) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="8dfbb333-5324-4311-bb60-3845baa90954" x="455" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(7) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="63ada25e-e224-4804-bb72-051deff4cc58" x="466" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(8) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="a844bdff-7c83-4700-bf2e-43a264048599" x="477" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(9) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="59abbb83-556f-4613-8088-410b4ce5aa32" x="495" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(10) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="385bfcf4-4775-4783-ad8a-afa6bc1dfef8" x="506" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(11) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="2d82b707-ba1f-452f-948f-bcbdab18e067" x="524" y="104" width="11" height="18">
+			<expression><![CDATA[$P{pin} != null ? $P{pin}.charAt(12) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="0e45ba4f-ca49-4a2b-ba59-55bf3a4722df" x="404" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin} != null ? $P{tin}.charAt(0) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="16d6226f-91fb-4c7f-afcf-831ce0829eb4" x="422" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin} != null ? $P{tin}.charAt(1) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="2ea8c934-de47-425b-ac0a-714a59dab6ad" x="433" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin} != null ? $P{tin}.charAt(2) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="4119d95f-64e9-46fe-8a34-6234bdfaf7fd" x="444" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin} != null ? $P{tin}.charAt(3) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="ba7a11b0-e299-405e-9315-32574933f43f" x="455" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin} != null ? $P{tin}.charAt(4) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="e9661576-36e0-49a5-b60d-fd0aa9484e8a" x="473" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin} != null ? $P{tin}.charAt(5) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="bf952ad1-a8b9-49a0-bc43-0b74554e6adc" x="484" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin}!= null ? $P{tin}.charAt(6) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="f66dbeb4-2361-4df3-880f-c4b490811f2e" x="495" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin} != null ? $P{tin}.charAt(7) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="33db7f3e-6d41-42be-b0b3-ace3a1aac03c" x="506" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin} != null ? $P{tin}.charAt(8) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="d429024c-7446-42e2-8580-9945ea5132ed" x="523" y="125" width="11" height="18">
+			<expression><![CDATA[$P{tin} != null ? $P{tin}.charAt(9) : ""]]></expression>
+		</element>
+		<element kind="textField" uuid="207296ff-5811-48e6-8e9c-ad675a370ac7" x="277" y="247" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType1Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="3245db8b-5e08-4bc6-bda9-7608f886f001" x="277" y="263" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType2Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="9119cd14-42b5-415c-a651-c9f14a5eaec4" x="365" y="247" width="84" height="20" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType1Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="aea421b1-3c86-4cfa-b271-b4f893de5a95" x="449" y="247" width="84" height="20" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType1Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="80ac2a91-1157-4376-be0c-d9f2a400e0a3" x="365" y="262" width="84" height="20" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType2Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="5b0c1438-5fa3-476d-a4d5-e87e0b481ae4" x="449" y="262" width="84" height="20" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType2Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="43cccac1-d972-40ea-9279-74131872aed7" x="277" y="276" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType3Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="59b6d7c0-634f-4aa5-a397-0e7f21e529a2" x="365" y="276" width="84" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType3Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="4699c734-b6b4-4c54-9c90-561fff177c61" x="443" y="276" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType3Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="9889f3e4-713f-41cf-930c-650566ee80e0" x="277" y="290" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4ADate}]]></expression>
+		</element>
+		<element kind="textField" uuid="8a564f4a-7d4d-4492-9868-42699ff33cb4" x="359" y="290" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4APaid}]]></expression>
+		</element>
+		<element kind="textField" uuid="40070b9e-71c7-4384-a5e0-9f41585ddb90" x="443" y="290" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4ATax}]]></expression>
+		</element>
+		<element kind="textField" uuid="3ff9a218-8993-41ee-85ab-f37cc8a31086" x="277" y="339" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B11Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="7597d3a2-10b2-4302-bee2-607da11ac5ef" x="359" y="340" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B11Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="51b43dc5-845b-41d8-afb6-0e628f77e044" x="443" y="340" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B11Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="fab0744d-5a38-4333-b098-32277c791ee9" x="277" y="355" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B12Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="ad630412-f2ff-4929-be69-57a9d817b5df" x="359" y="355" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B12Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="8682cf74-83e1-443d-93a2-03cb2269a7bb" x="443" y="356" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B12Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="50875118-ca11-44da-b2ec-5c5557bba4a1" x="277" y="371" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B13Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="5cf3c9ae-0c9d-4ddb-b849-2efb5505c336" x="359" y="371" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B13Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="88322e09-0229-4fd6-8b76-c126f3c7c264" x="443" y="371" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B13Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="c33a3575-5330-443a-8d60-52afc6f72961" x="277" y="383" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B14Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="6b42445f-8e6d-49b4-93a1-f69da830f6af" x="359" y="384" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B14Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="11e752bb-bcf1-426a-83ff-7e100bd7e9a3" x="443" y="384" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B14Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="eced6718-9cd9-4f57-a33d-2b603f636224" x="277" y="409" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B21Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="c4b8d919-56b3-49eb-806c-dbd7042a4bc2" x="359" y="410" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B21Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="872a5aa2-5855-467b-bca3-12685b838cd2" x="443" y="410" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B21Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="911d3476-5e7a-4ef3-9c2f-d59babc2af7f" x="276" y="436" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B22Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="80940cdd-b53d-4f54-92ad-09e2a3adfc97" x="359" y="437" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B22Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="2099989b-678a-4dd4-8eb9-18f3d23f60d0" x="443" y="437" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B22Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="eb24a936-ad9e-47ce-832b-cc5fdc731a05" x="277" y="461" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B23Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="9be18081-0576-4290-888b-d1ca5218738b" x="359" y="460" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B23Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="b29549bb-4f02-4f32-9af3-607e924b5076" x="443" y="460" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B23Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="b55d77a4-05d0-42d7-aacd-8a7b979f6ba6" x="277" y="490" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B25Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="b8559912-198b-4c73-b55f-cc2d1dc480ca" x="359" y="490" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B25Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="d230e87a-6a2b-457e-85a2-635d4f100fbf" x="443" y="489" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B25Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="058cb1f2-dd15-4467-941b-8b154efcb390" x="277" y="540" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType5Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="b57736af-0825-4c3f-b60a-c27cf9d5acd5" x="359" y="540" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType5Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="10887493-d110-42bf-9f8f-371d009f77af" x="443" y="540" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType5Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="b3e1a218-6638-48a4-8fae-4c2f0378895c" x="277" y="554" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType6Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="f7c4dd3a-6a49-47c7-aef9-c5cbd1a4e1c5" x="359" y="556" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType6Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="f8c9127a-5a73-4cc4-9719-5954dcf14496" x="443" y="558" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType6Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="e30fb4ef-9684-450f-99f4-7834ca89632f" x="359" y="571" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{paidAmt}]]></expression>
+		</element>
+		<element kind="textField" uuid="2ad42e87-ef23-482e-bcd3-331761edad90" x="443" y="571" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{taxAmt}]]></expression>
+		</element>
+		<element kind="textField" uuid="e2c117fe-3468-45b2-aad2-7c85cc63e0ca" x="277" y="480" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B24Date}]]></expression>
+		</element>
+		<element kind="textField" uuid="6c63d299-6127-4176-83e6-109d8e5b5bce" x="359" y="480" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B24Paid}]]></expression>
+		</element>
+		<element kind="textField" uuid="7e668355-8e4a-4bed-bfc3-add30de8c82d" x="443" y="477" width="90" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Right">
+			<expression><![CDATA[$P{incType4B24Tax}]]></expression>
+		</element>
+		<element kind="textField" uuid="215405ae-2d04-438b-aca1-b093b1356bbd" x="126" y="380" width="78" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B14Detail}]]></expression>
+		</element>
+		<element kind="textField" uuid="e1f51552-e892-4e1c-8a23-17941e309c6b" x="122" y="486" width="138" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType4B25Detail}]]></expression>
+		</element>
+		<element kind="textField" uuid="7b2509a4-e414-4bcc-8ff5-ae1cdefb9194" x="66" y="554" width="174" height="16" fontName="TH Saraban New" fontSize="12.0" hTextAlign="Center">
+			<expression><![CDATA[$P{incType6Detail}]]></expression>
+		</element>
+		<element kind="textField" uuid="ab62d029-aadf-475d-ba2c-ba09f3cc6865" x="160" y="589" width="362" height="20" fontName="TH Saraban New" fontSize="14.0">
+			<expression><![CDATA[$P{taxAmtAlphabet}]]></expression>
+		</element>
+		<element kind="textField" uuid="4de15197-4e53-4cd0-923a-78e1f231d014" x="77" y="628" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{payCon}.equals("1") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="6f391312-852c-49f1-83ff-528f6d95bde6" x="162" y="628" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{payCon}.equals("2") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="0b130679-ba29-470a-9dea-d42eb4e6af67" x="259" y="628" width="86" height="28" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{payCon}.equals("3") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="21893540-15e7-449f-95f1-b8be3b88f81a" x="351" y="628" width="32" height="26" markup="none" fontName="DejaVuSans" fontSize="16.0">
+			<expression><![CDATA[$P{payCon}.equals("4") ? "\u2611" : "\u2610"]]></expression>
+		</element>
+		<element kind="textField" uuid="9c1c7301-a8fc-425b-a32e-2bab7f6ca88f" x="415" y="628" width="118" height="26" markup="none" fontName="TH Saraban New" fontSize="14.0">
+			<expression><![CDATA[$P{payConDetail}]]></expression>
+		</element>
+		<element kind="textField" uuid="8d0b9c22-047c-4d95-9f0f-c9dfe8f16b8c" x="224" y="610" width="92" height="27" markup="none" fontName="TH Saraban New" fontSize="11.0">
+			<expression><![CDATA[$P{pensionFund}]]></expression>
+			<box>
+				<pen lineColor="#FF130F"/>
+			</box>
+		</element>
+		<element kind="textField" uuid="12866f41-c364-4f17-9e94-2bebbfd9b18a" x="350" y="609" width="99" height="24" markup="none" fontName="TH Saraban New" fontSize="11.0">
+			<expression><![CDATA[$P{socialSecurityFund}]]></expression>
+		</element>
+		<element kind="textField" uuid="7253a9da-f639-4e30-935a-305dbec5c4d2" x="480" y="609" width="88" height="20" markup="none" fontName="TH Saraban New" fontSize="11.0">
+			<expression><![CDATA[$P{lifeSupportFund}]]></expression>
+		</element>
+		<element kind="textField" uuid="9d38a07c-f9f6-4cae-be68-f6a481c5c5fd" x="332" y="697" width="51" height="21" fontName="TH Saraban New" fontSize="13.0">
+			<expression><![CDATA[$P{month}]]></expression>
+		</element>
+		<element kind="textField" uuid="2b569dcd-b885-4eb5-ba6b-3242639fa54d" x="294" y="697" width="51" height="21" fontName="TH Saraban New" fontSize="13.0">
+			<expression><![CDATA[$P{date}]]></expression>
+		</element>
+		<element kind="textField" uuid="7abcdb4c-9463-40f3-ba4b-d0989d179fd6" x="375" y="697" width="51" height="21" fontName="TH Saraban New" fontSize="13.0">
+			<expression><![CDATA[$P{year}]]></expression>
+		</element>
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</pageHeader>
+	<pageFooter height="48" splitType="Stretch">
+		<element kind="staticText" uuid="71eeacb7-cf4c-4fc2-8ec3-e7499296318f" x="250" y="7" width="280" height="40" fontName="TH Saraban New" fontSize="10.0" vTextAlign="Top">
+			<text><![CDATA[1. กรณีบุคคลธรรมดาไทย ให้ใช้เลขประจำตัวประชาชนของกรมการปกครอง
+2. กรณีนิติบุคคล ให้ใช้เลขทะเบียนนิติบุคคลของกรมพัฒนาธุรกิจการค้า
+3. กรณีอื่น ๆ นอกเหนือจาก 1. และ 2. ให้ใช้เลขประจำตังผู้เสียภาษีอากร (13 หลัก) ของกรมสรรพากร ]]></text>
+		</element>
+		<element kind="staticText" uuid="0e006943-49b4-49b6-9a27-d826639ecbd0" x="10" y="7" width="250" height="30" fontName="TH Saraban New" fontSize="10.0">
+			<text><![CDATA[หมายเหตุ เลขประจำตัว ผู้เสียภาษีอากร (13หลัก)* หมายถึง]]></text>
+		</element>
+	</pageFooter>
+</jasperReport>
